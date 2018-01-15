@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Попов](https://up.htmlacademy.ru/adaptive/13/user/505149).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Фомин](https://htmlacademy.ru/profile/id44744).
 
 ---
 
