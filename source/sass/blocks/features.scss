@@ -1,0 +1,44 @@
+.features {
+  font-family: $page-font;
+  text-transform: uppercase;
+}
+
+.features__list,
+.features__list-grey {
+  @include list-reset;
+}
+
+.features__list {
+  min-height: 416px;
+  text-align: left;
+}
+
+.features__item {
+  padding: 34px 0 0 70px;
+  margin: 0 0 8px 0;
+  width: 290px;
+}
+
+.features__item--gift,
+.features__item--food {
+  margin-top: -15px;
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.features__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+}
