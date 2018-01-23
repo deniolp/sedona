@@ -2,13 +2,12 @@
   font-family: $page-font;
   text-transform: uppercase;
   text-align: center;
-  min-height: 637px;
 }
 
 .offer__question {
   display: block;
-  margin: 26px 0 20px 0;
-  padding: 0;
+  margin: 0 0 20px 0;
+  padding: 26px 0 0 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -26,5 +25,5 @@
 }
 
 .offer__wrapper {
-  margin-bottom: 50px;
+  min-height: 286px;
 }
