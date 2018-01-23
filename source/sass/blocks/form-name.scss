@@ -1,0 +1,35 @@
+.form-name {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  font-family: $page-font;
+  margin-top: 20px;
+}
+
+.form-name__label {
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #333333;
+  text-align: left;
+  flex-grow: 0;
+}
+
+.form-name__input {
+  flex-grow: 1;
+  border: none;
+  background-color: #f2f2f2;
+  min-height: 58px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  padding-left: 20px;
+  min-width: 150px;
+}

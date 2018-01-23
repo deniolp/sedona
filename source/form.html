@@ -38,22 +38,22 @@
       </section>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="feedback-form__item">
-          <legend class="feedback-form__legend">Представьтесь:</legend>
+          <b class="feedback-form__b">Представьтесь:</b>
           <div class="form-name">
-            <label class="form-name__label" for="name">ИМЯ<sup>*</sup></label>
+            <label class="form-name__label" for="name">ИМЯ<sup>*</sup>:</label>
             <input class="form-name__input" type="text" name="name" id="name" placeholder="Петр" required>
           </div>
           <div class="form-name">
-            <label class="form-name__label" for="surname">ФАМИЛИЯ<sup>*</sup></label>
+            <label class="form-name__label" for="surname">ФАМИЛИЯ<sup>*</sup>:</label>
             <input class="form-name__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
           </div>
           <div class="form-name">
-            <label class="form-name__label" for="dadsname">ОТЧЕСТВО</label>
+            <label class="form-name__label" for="dadsname">ОТЧЕСТВО:</label>
             <input class="form-name__input" type="text" name="dadsname" id="dadsname" placeholder="Александрович">
           </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--contacts">
-          <legend class="feedback-form__legend">Контактная информация:</legend>
+          <b class="feedback-form__b">Контактная информация:</b>
           <div class="form-contact">
             <label class="form-contact__label" for="tel">Контактный телефон<sup>*</sup>:</label>
             <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
@@ -64,7 +64,7 @@
           </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--genfeedback">
-          <legend class="feedback-form__legend">Ваше Общее впечатление:</legend>
+          <b class="feedback-form__b">Ваше Общее впечатление:</b>
           <input class="feedback-form__radio-input" type="radio" id="positive" name="general-feedback" value="positive" checked>
           <label class="radio-label" for="positive">Скорее положительное</label>
           <input class="feedback-form__radio-input" type="radio" id="negative" name="general-feedback" value="negative">
@@ -73,7 +73,7 @@
           <label class="radio-label" for="soso">Затрудняюсь ответить</label>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--visited-places">
-          <legend class="feedback-form__legend">Посещенные Достопримечательности:</legend>
+          <b class="feedback-form__b">Посещенные Достопримечательности:</b>
           <input class="feedback-form__chb-input" type="checkbox" id="bridge" name="bridge" checked>
           <label class="chb-label" for="bridge">Мост Дьявола</label>
           <input class="feedback-form__chb-input" type="checkbox" id="park" name="park" checked>
@@ -84,7 +84,7 @@
           <label class="chb-label" for="redrocks">Красные скалы</label>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--feedback">
-          <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
+          <b class="feedback-form__b">Опишите свои эмоции:</b>
           <textarea class="feedback-form__textarea" name="feedback" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
