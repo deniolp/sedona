@@ -1,2 +1,9 @@
+@import "normalize.scss";
+@import "fonts.scss";
+@import "vars.scss";
+@import "mixins.scss";
+@import "blocks/visually-hidden.scss";
 @import "blocks/container.scss";
-@import "normalize.min.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";

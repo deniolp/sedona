@@ -1,1 +1,19 @@
-*
+.page-header {
+  background-color: $white;
+  text-align: center;
+}
+
+.page-header__logo-wrapper {
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-header__logo-image {
+
+}
