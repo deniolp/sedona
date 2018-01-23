@@ -1,0 +1,59 @@
+.banner {
+  font-family: $page-font;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner__image {
+  position: relative;
+  width: 100%;
+  min-height: 389px;
+  background-color: $main-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  z-index: 1;
+  img {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 90px;
+  }
+}
+
+.banner__triangle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 105% auto;
+}
+
+.banner__welcome {
+  width: 275px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner__slogan {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.banner__intro {
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  color: #333333;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+}

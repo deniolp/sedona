@@ -4,13 +4,17 @@
 }
 
 .page-header__logo-wrapper {
+  min-height: 55px;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .page-header__logo {
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 5;
   transform: translateX(-50%);
 }
 
