@@ -1,29 +1,8 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
-    box-sizing: border-box;
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
-}
-
-body {
-    margin: 0
-}
-
-*,:after,:before {
-    box-sizing: inherit
-}
-
-a {
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-style: none
 }
 
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section {
