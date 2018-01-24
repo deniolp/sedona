@@ -1,8 +1,6 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 article,
@@ -38,7 +36,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace,monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 
@@ -57,8 +55,8 @@ dfn {
 }
 
 mark {
-  background-color: #ff0;
-  color: #000;
+  background-color: #ffff00;
+  color: #000000;
 }
 
 small {
@@ -74,11 +72,11 @@ sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 audio,
@@ -117,24 +115,17 @@ select {
   text-transform: none;
 }
 
-[type=reset],
-[type=submit],
-button,
-html [type=button] {
-  -webkit-appearance: button;
-}
-
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -159,30 +150,23 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox],
-[type=radio],
+[type="checkbox"],
+[type="radio"],
 legend {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
-  -webkit-appearance: textfield;
+[type="search"] {
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
   font: inherit;
 }
 
