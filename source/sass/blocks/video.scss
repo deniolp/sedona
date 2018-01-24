@@ -1,0 +1,35 @@
+.video {
+  text-transform: uppercase;
+  font-family: $page-font;
+  text-align: center;
+}
+
+.video__title {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+}
+
+.video__description {
+  width: 270px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 27px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.vileo__player {
+  margin-top: 34px;
+  width: 100%;
+  min-height: 201px;
+  background-color: #92acbd;
+  background-image: url("../img/video-mobile@1x.jpg");
+}
