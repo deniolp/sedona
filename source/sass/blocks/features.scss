@@ -81,6 +81,7 @@
 }
 
 .features__item-grey {
+  position: relative;
   min-height: 168px;
 }
 
@@ -105,4 +106,14 @@
   margin: 0 auto;
   padding: 15px 0 0 0;
   width: 250px;
+}
+
+.features__hr::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: #d6d6d6;
+  top:167px;
+  left: 20px;
 }
