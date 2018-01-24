@@ -22,7 +22,7 @@
 }
 
 .feature-with-photo__title {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
@@ -37,8 +37,8 @@
 
 .feature-with-photo__description {
   width: 280px;
-  margin: 15px auto 0 auto;
-  padding: 0 0 39px 0;
+  margin: 15px auto 0;
+  padding: 0 0 39px;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -52,11 +52,11 @@
 }
 
 .feature-with-photo__image--1 {
-  background-image: url('../img/main-city-mobile@1x.jpg');
+  background-image: url("../img/main-city-mobile@1x.jpg");
 }
 
 .feature-with-photo__image--2 {
-  background-image: url('../img/main-bridge-mobile@1x.jpg');
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
 }
 
 .feature-with-photo--first {
