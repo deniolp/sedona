@@ -1,0 +1,43 @@
+.form-chbx {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  min-height: 58px;
+  margin-bottom: 19px;
+}
+
+.form-chbx__input {
+  display: none;
+}
+
+.form-chbx__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  padding-left: 79px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 55px;
+    background-color: #f2f2f2;
+    top: -14px;
+    left: 1px;
+    border-radius: 10%;
+  }
+}
+
+.form-chbx__input:checked ~ .form-chbx__label::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #f2f2f2;
+  top: -1px;
+  left: 14px;
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

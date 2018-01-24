@@ -37,7 +37,7 @@
         <p class="banner__intro banner__intro--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="feedback-form__item">
+        <fieldset class="feedback-form__item feedback-form__item--name">
           <b class="feedback-form__b">Представьтесь:</b>
           <div class="form-name">
             <label class="form-name__label" for="name">ИМЯ<sup>*</sup>:</label>
@@ -56,36 +56,60 @@
           <b class="feedback-form__b">Контактная информация:</b>
           <div class="form-contact">
             <label class="form-contact__label" for="tel">Контактный телефон<sup>*</sup>:</label>
-            <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+            <p class="form-contact__input-container">
+              <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+              <span class="form-contact__logo form-contact__logo--phone"></span>
+            </p>
           </div>
           <div class="form-contact">
             <label class="form-contact__label" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+            <p class="form-contact__input-container">
+              <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+              <span class="form-contact__logo form-contact__logo--env"></span>
+            </p>
           </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--genfeedback">
           <b class="feedback-form__b">Ваше Общее впечатление:</b>
-          <input class="feedback-form__radio-input" type="radio" id="positive" name="general-feedback" value="positive" checked>
-          <label class="radio-label" for="positive">Скорее положительное</label>
-          <input class="feedback-form__radio-input" type="radio" id="negative" name="general-feedback" value="negative">
-          <label class="radio-label" for="negative">Скорее отрицательное</label>
-          <input class="feedback-form__radio-input" type="radio" id="soso" name="general-feedback" value="soso">
-          <label class="radio-label" for="soso">Затрудняюсь ответить</label>
+          <div class="feedback-form__wrapper">
+            <p class="form-radio">
+              <input class="form-radio__input" type="radio" id="positive" name="general-feedback" value="positive" checked>
+              <label class="form-radio__label" for="positive">Скорее положительное</label>
+            </p>
+            <p class="form-radio">
+              <input class="form-radio__input" type="radio" id="negative" name="general-feedback" value="negative">
+              <label class="form-radio__label" for="negative">Скорее отрицательное</label>
+            </p>
+            <p class="form-radio">
+              <input class="form-radio__input" type="radio" id="soso" name="general-feedback" value="soso">
+              <label class="form-radio__label" for="soso">Затрудняюсь ответить</label>
+            </p>
+          </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--visited-places">
           <b class="feedback-form__b">Посещенные Достопримечательности:</b>
-          <input class="feedback-form__chb-input" type="checkbox" id="bridge" name="bridge" checked>
-          <label class="chb-label" for="bridge">Мост Дьявола</label>
-          <input class="feedback-form__chb-input" type="checkbox" id="park" name="park" checked>
-          <label class="chb-label" for="park">Слайд-парк</label>
-          <input class="feedback-form__chb-input" type="checkbox" id="bell" name="bell">
-          <label class="chb-label" for="bell">Гора-Колокол</label>
-          <input class="feedback-form__chb-input" type="checkbox" id="redrocks" name="redrocks" checked>
-          <label class="chb-label" for="redrocks">Красные скалы</label>
+          <div class="feedback-form__wrapper">
+            <p class="form-chbx">
+              <input class="form-chbx__input" type="checkbox" id="bridge" name="bridge" checked>
+              <label class="form-chbx__label" for="bridge">Мост Дьявола</label>
+            </p>
+            <p class="form-chbx">
+              <input class="form-chbx__input" type="checkbox" id="park" name="park" checked>
+              <label class="form-chbx__label" for="park">Слайд-парк</label>
+            </p>
+            <p class="form-chbx">
+              <input class="form-chbx__input" type="checkbox" id="bell" name="bell">
+              <label class="form-chbx__label" for="bell">Гора-Колокол</label>
+            </p>
+            <p class="form-chbx">
+              <input class="form-chbx__input" type="checkbox" id="redrocks" name="redrocks" checked>
+              <label class="form-chbx__label" for="redrocks">Красные скалы</label>
+            </p>
+          </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--feedback">
           <b class="feedback-form__b">Опишите свои эмоции:</b>
-          <textarea class="feedback-form__textarea" name="feedback" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="feedback-form__textarea" name="feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
       </form>

@@ -1,6 +1,7 @@
 .feedback-form {
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 38px;
   font-family: $page-font;
 }
 
@@ -8,7 +9,22 @@
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.feedback-form__item--name {
   padding-bottom: 25px;
+}
+
+.feedback-form__item--contacts {
+  padding-bottom: 17px;
+}
+
+.feedback-form__item--genfeedback {
+  padding-bottom: 3px;
+}
+
+.feedback-form__item--visited-places {
+  margin-bottom:-5px;
 }
 
 .feedback-form__b {
@@ -23,4 +39,29 @@
   padding: 0;
   padding-top: 18px;
   margin-bottom: 22px;
+}
+
+.feedback-form__wrapper {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.feedback-form__textarea {
+  border: none;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: -5px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  padding: 18px;
+  margin-bottom: 45px;
+}
+
+.feedback-form__button {
+  padding-top: 4px;
 }
