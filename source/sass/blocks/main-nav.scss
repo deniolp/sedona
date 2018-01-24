@@ -5,4 +5,76 @@
 .main-nav__toggle {
   position: absolute;
   border: none;
+  width: 23px;
+  height: 5px;
+  background-color: $main-blue;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 500ms ease-in-out;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 5px;
+    background-color: $main-blue;
+    top: -8px;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 5px;
+    background-color: $main-blue;
+    top: 8px;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+  }
+}
+
+.main-nav__toggle--closed {
+  position: absolute;
+  border: none;
+  width: 23px;
+  height: 5px;
+  background-color: transparent;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 10;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 5px;
+    background-color: $white;
+    top: 5px;
+    left: -2px;
+    cursor: pointer;
+    z-index: 10;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 5px;
+    background-color: $white;
+    top: 5px;
+    left: -2px;
+    cursor: pointer;
+    z-index: 10;
+    transform: rotate(-45deg);
+  }
 }
