@@ -60,13 +60,14 @@
   padding: 18px;
   margin-bottom: 45px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     outline: none;
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     background-color: $white;
     border: 3px solid #e5e5e5;
     padding: 15px;
