@@ -33,13 +33,14 @@
   padding-left: 20px;
   min-width: 150px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     outline: none;
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     background-color: $white;
     border: 3px solid #e5e5e5;
     padding-left: 17px;
