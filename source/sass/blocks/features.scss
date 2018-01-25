@@ -1,5 +1,5 @@
 .features {
-  font-family: $page-font;
+  font-family: $page-font, "Tahoma", sans-serif;
   text-transform: uppercase;
 }
 
@@ -14,14 +14,49 @@
 }
 
 .features__item {
+  position: relative;
   padding: 34px 0 0 70px;
   margin: 0 0 8px 0;
   width: 290px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
-.features__item--gift,
+.features__item--house::before {
+  top: 26px;
+  left: 22px;
+  width: 37px;
+  height: 36px;
+  background-image: url("../img/icon-house.svg");
+}
+
+.features__item--gift {
+  margin-top: -15px;
+
+  &::before {
+    top: 24px;
+    left: 25px;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-gift.svg");
+  }
+}
+
 .features__item--food {
   margin-top: -15px;
+
+  &::before {
+    top: 30px;
+    left: 19px;
+    width: 38px;
+    height: 34px;
+    background-image: url("../img/icon-burger.svg");
+  }
 }
 
 .features__title {
@@ -49,6 +84,7 @@
 }
 
 .features__item-grey {
+  position: relative;
   min-height: 168px;
 }
 
@@ -73,4 +109,14 @@
   margin: 0 auto;
   padding: 15px 0 0 0;
   width: 250px;
+}
+
+.features__hr::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: #d6d6d6;
+  top: 167px;
+  left: 20px;
 }

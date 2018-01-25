@@ -2,13 +2,24 @@
   width: 280px;
   margin: 0 auto;
   padding-bottom: 38px;
-  font-family: $page-font;
+  font-family: $page-font, "Tahoma", sans-serif;
 }
 
 .feedback-form__item {
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
+
+  &::after:not(.feedback-form__item:last-child) {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #d6d6d6;
+    bottom: 0;
+    left: -20px;
+  }
 }
 
 .feedback-form__item--name {
@@ -59,6 +70,19 @@
   color: #000000;
   padding: 18px;
   margin-bottom: 45px;
+
+  &:hover {
+    outline: none;
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: $white;
+    border: 3px solid #e5e5e5;
+    padding: 15px;
+  }
 }
 
 .feedback-form__button {

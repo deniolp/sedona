@@ -28,6 +28,15 @@
     left: 1px;
     border-radius: 50%;
   }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before,
+  &:focus::before {
+    background-color: #d5d5d5;
+  }
 }
 
 .form-radio__input:checked ~ .form-radio__label::after {
@@ -39,4 +48,8 @@
   top: 4px;
   left: 19px;
   border-radius: 50%;
+}
+
+.form-radio__input:checked ~ .form-radio__label:active::after {
+  background-color: #a4a4a4;
 }

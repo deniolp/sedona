@@ -25,6 +25,19 @@
   color: #000000;
   padding-left: 20px;
   flex-grow: 1;
+
+  &:hover {
+    outline: none;
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: $white;
+    border: 3px solid #e5e5e5;
+    padding-left: 17px;
+  }
 }
 
 .form-contact__input-container {

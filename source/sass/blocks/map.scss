@@ -1,8 +1,33 @@
 .map {
+  position: relative;
   width: 100%;
   min-height: 350px;
   background-color: #f3f1ed;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $main-blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
