@@ -6,9 +6,20 @@
 }
 
 .feedback-form__item {
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
+
+  &::after:not(.feedback-form__item:last-child) {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #d6d6d6;
+    bottom: 0;
+    left: -20px;
+  }
 }
 
 .feedback-form__item--name {
