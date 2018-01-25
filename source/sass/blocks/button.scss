@@ -12,7 +12,8 @@
   padding-top: 15px;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #669ec0;
   }
 
