@@ -26,6 +26,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer__hash-wrapper {
+    margin: 0 0 0 132px;
+    padding: 0;
+  }
+}
+
 .page-footer__hash {
   font-size: 21px;
   line-height: 26px;

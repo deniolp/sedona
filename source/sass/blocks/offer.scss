@@ -39,6 +39,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .offer__description {
+    margin: 0 auto 47px auto;
+  }
+}
+
 .offer__br {
   display: none;
 }
@@ -56,6 +62,12 @@
 @media (min-width: $tablet-width) {
   .offer__wrapper {
     min-height: 318px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer__wrapper {
+    min-height: 331px;
   }
 }
 

@@ -15,6 +15,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin: 0 0 0 352px;
+  }
+}
+
 .copyright__info {
   margin-right: 7px;
 }

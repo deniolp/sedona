@@ -72,6 +72,16 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .features__item--gift {
+    order: 3;
+
+    .features__description {
+      width: 300px;
+    }
+  }
+}
+
 .features__item--food {
   margin-top: -15px;
 
@@ -90,6 +100,12 @@
     padding-top: 159px;
     margin: 0;
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item {
+    width: 400px;
   }
 }
 
@@ -126,6 +142,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .features__description {
+    width: 300px;
+  }
+}
+
 .features__list-grey {
   text-align: center;
   background-color: #eeeeee;
@@ -150,6 +172,12 @@
     width: 256px;
     min-height: 256px;
     padding-top: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item-grey {
+    width: 400px;
   }
 }
 
@@ -188,6 +216,12 @@
   .features__description-grey {
     padding-top: 22px;
     width: 158px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__description-grey {
+    width: 300px;
   }
 }
 

@@ -25,13 +25,17 @@
   }
 }
 
-
-
 @media (min-width: $tablet-width) {
   .feature-with-photo__outline {
     text-align: center;
     min-width: 256px;
     padding-top: 45px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+  .feature-with-photo__outline {
+    min-width: 400px;
     }
 }
 
@@ -70,6 +74,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .feature-with-photo__title {
+    padding-top: 6px;
+    margin-bottom: 10px;
+  }
+}
+
 .feature-with-photo__number {
   font-size: 14px;
   line-height: 21px;
@@ -90,6 +101,12 @@
     width: 170px;
     margin: 0 auto;
     margin-top: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature-with-photo__description {
+    width: 290px;
   }
 }
 
