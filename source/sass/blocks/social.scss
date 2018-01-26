@@ -7,6 +7,12 @@
   width: 151px;
 }
 
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0 0 0 114px;
+  }
+}
+
 .social__item {
   width: 46px;
   height: 48px;

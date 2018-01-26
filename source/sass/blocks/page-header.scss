@@ -3,11 +3,17 @@
   text-align: center;
 }
 
-.page-header__logo-wrapper {
+.page-header__paragraph {
   min-height: 55px;
   position: relative;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__paragraph {
+    display: none;
+  }
 }
 
 .page-header__logo {
@@ -16,4 +22,8 @@
   left: 50%;
   z-index: 5;
   transform: translateX(-50%);
+}
+
+.page-header__logo--mobile {
+  top: 224px;
 }

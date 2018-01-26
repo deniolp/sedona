@@ -3,9 +3,25 @@
   @include list-reset;
 }
 
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 768px;
+    display: flex;
+    min-height: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 1200px;
+    display: flex;
+    min-height: 56px;
+  }
+}
+
 .site-list__item {
   background-color: $main-blue;
-  min-height: 55px;
+  min-height: 56px;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
 
@@ -26,6 +42,47 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    width: 153px;
+    background-color: $white;
+    border-top: none;
+    border-bottom: none;
+
+    a {
+      color: #000000;
+      font-size: 14px;
+      line-height: 26px;
+      text-transform: uppercase;
+      padding-top: 13px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 160px;
+    }
+
+    &:last-of-type {
+      box-shadow: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    width: 239px;
+
+    &:nth-child(3) {
+      margin-left: 244px;
+    }
+  }
+}
+
 .site-list--closed {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list--closed {
+    display: flex;
+  }
 }
