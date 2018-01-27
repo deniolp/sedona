@@ -3,7 +3,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 6px;
 }
 
 .banner__image {
@@ -51,7 +51,7 @@
 .banner__welcome {
   width: 275px;
   margin: 0 auto;
-  padding: 0 0 23px;
+  padding: 0 0 17px;
 }
 
 .banner__slogan {
@@ -59,6 +59,22 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner__slogan {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .banner__welcome {
+    width: 510px;
+  }
+
+  .banner__slogan--small {
+    font-size: 21px;
+  }
 }
 
 .banner__intro {
@@ -75,6 +91,7 @@
   width: 275px;
   margin: 0 auto;
   padding-top: 25px;
+  line-height: 24px;
 }
 
 .banner__intro--photo {

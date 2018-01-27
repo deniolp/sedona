@@ -1,3 +1,21 @@
-.articles__video {
-  min-height: 498px;
+.articles {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: 0 auto;
+    border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .articles {
+    width: 100%;
+  }
 }
