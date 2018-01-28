@@ -5,8 +5,22 @@
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: nowrap;
-  font-family: $page-font, "Tahoma", sans-serif;
+  font-family: $page-font;
   margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-name {
+    width: 323px;
+    padding-left: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-name {
+    width: 480px;
+    padding-left: 80px;
+  }
 }
 
 .form-name__label {
@@ -44,5 +58,11 @@
     background-color: $white;
     border: 3px solid #e5e5e5;
     padding-left: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-name__input {
+    min-width: 140px;
   }
 }

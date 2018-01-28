@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,15 +20,14 @@
           <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
         </ul>
       </nav>
-      <p class="page-header__logo-wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
-        </a>
-      </p>
+      <p class="page-header__paragraph"></p>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+      </a>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Страница с отзывом о Седоне</h1>
-      <section class="banner">
+      <section class="banner banner--form">
         <h2 class="visually-hidden">Вступительный раздел с баннером о форме отзыва</h2>
         <div class="banner__image">
           <img src="img/text-sedona.svg" alt="Добро пожаловать в Седону!" width="229" height="39">
@@ -54,19 +54,21 @@
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--contacts">
           <b class="feedback-form__b">Контактная информация:</b>
-          <div class="form-contact">
-            <label class="form-contact__label" for="tel">Контактный телефон<sup>*</sup>:</label>
-            <p class="form-contact__input-container">
-              <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
-              <span class="form-contact__logo form-contact__logo--phone"></span>
-            </p>
-          </div>
-          <div class="form-contact">
-            <label class="form-contact__label" for="email">Электронная почта<sup>*</sup>:</label>
-            <p class="form-contact__input-container">
-              <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-              <span class="form-contact__logo form-contact__logo--env"></span>
-            </p>
+          <div class="form-contact__wrapper">
+            <div class="form-contact">
+              <label class="form-contact__label" for="tel"><span class="form-contact__hiding-phone">Контактный </span>телефон<sup>*</sup>:</label>
+              <p class="form-contact__input-container">
+                <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+                <span class="form-contact__logo form-contact__logo--phone"></span>
+              </p>
+            </div>
+            <div class="form-contact">
+              <label class="form-contact__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <p class="form-contact__input-container">
+                <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <span class="form-contact__logo form-contact__logo--env"></span>
+              </p>
+            </div>
           </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--genfeedback">
@@ -88,20 +90,20 @@
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--visited-places">
           <b class="feedback-form__b">Посещенные Достопримечательности:</b>
-          <div class="feedback-form__wrapper">
-            <p class="form-chbx">
+          <div class="feedback-form__wrapper feedback-form__wrapper--visited">
+            <p class="form-chbx form-chbx--bridge">
               <input class="form-chbx__input" type="checkbox" id="bridge" name="bridge" checked>
               <label class="form-chbx__label" for="bridge">Мост Дьявола</label>
             </p>
-            <p class="form-chbx">
+            <p class="form-chbx form-chbx--park">
               <input class="form-chbx__input" type="checkbox" id="park" name="park" checked>
               <label class="form-chbx__label" for="park">Слайд-парк</label>
             </p>
-            <p class="form-chbx">
+            <p class="form-chbx form-chbx--bell">
               <input class="form-chbx__input" type="checkbox" id="bell" name="bell">
               <label class="form-chbx__label" for="bell">Гора-Колокол</label>
             </p>
-            <p class="form-chbx">
+            <p class="form-chbx form-chbx--rocks">
               <input class="form-chbx__input" type="checkbox" id="redrocks" name="redrocks" checked>
               <label class="form-chbx__label" for="redrocks">Красные скалы</label>
             </p>

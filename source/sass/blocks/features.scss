@@ -1,6 +1,13 @@
 .features {
-  font-family: $page-font, "Tahoma", sans-serif;
+  font-family: $page-font;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .features__list,
@@ -11,13 +18,34 @@
 .features__list {
   min-height: 416px;
   text-align: left;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    min-height: 330px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    padding-bottom: 81px;
+  }
 }
 
 .features__item {
   position: relative;
-  padding: 34px 0 0 70px;
-  margin: 0 0 8px 0;
+  padding: 19px 0 0 70px;
+  margin: 0 0 22px 0;
   width: 290px;
+  height: auto;
 
   &::before {
     position: absolute;
@@ -28,8 +56,8 @@
 }
 
 .features__item--house::before {
-  top: 26px;
-  left: 22px;
+  top: 9px;
+  left: 21px;
   width: 37px;
   height: 36px;
   background-image: url("../img/icon-house.svg");
@@ -39,11 +67,31 @@
   margin-top: -15px;
 
   &::before {
-    top: 24px;
-    left: 25px;
+    top: 9px;
+    left: 24px;
     width: 32px;
     height: 37px;
     background-image: url("../img/icon-gift.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__item--gift {
+    order: 3;
+
+    .features__description {
+      width: 170px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item--gift {
+    order: 3;
+
+    .features__description {
+      width: 300px;
+    }
   }
 }
 
@@ -51,11 +99,27 @@
   margin-top: -15px;
 
   &::before {
-    top: 30px;
-    left: 19px;
+    top: 16px;
+    left: 18px;
     width: 38px;
     height: 34px;
     background-image: url("../img/icon-burger.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__item {
+    padding: 0;
+    padding-top: 141px;
+    margin: 0;
+    text-align: center;
+    width: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item {
+    width: 400px;
   }
 }
 
@@ -69,6 +133,12 @@
   color: #000000;
 }
 
+@media (min-width: $tablet-width) {
+  .features__title {
+    font-size: 21px;
+  }
+}
+
 .features__description {
   margin: 0;
   padding: 0;
@@ -78,14 +148,52 @@
   color: #333333;
 }
 
+@media (min-width: $tablet-width) {
+  .features__description {
+    width: 158px;
+    margin: 0 auto;
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__description {
+    width: 300px;
+  }
+}
+
 .features__list-grey {
   text-align: center;
   background-color: #eeeeee;
 }
 
+@media (min-width: $tablet-width) {
+  .features__list-grey {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 256px;
+  }
+}
+
 .features__item-grey {
   position: relative;
   min-height: 168px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item-grey {
+    width: 256px;
+    min-height: 256px;
+    padding-top: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item-grey {
+    width: 400px;
+  }
 }
 
 .features__title-grey {
@@ -95,6 +203,14 @@
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .features__title-grey {
+    font-size: 21px;
+    width: 140px;
+    margin: 0 auto;
+  }
 }
 
 .features__number-grey,
@@ -111,6 +227,19 @@
   width: 250px;
 }
 
+@media (min-width: $tablet-width) {
+  .features__description-grey {
+    padding-top: 22px;
+    width: 158px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__description-grey {
+    width: 300px;
+  }
+}
+
 .features__hr::after {
   position: absolute;
   content: "";
@@ -119,4 +248,20 @@
   background-color: #d6d6d6;
   top: 167px;
   left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__hr::after {
+    display: none;
+  }
+}
+
+.features__br {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .features__br {
+    display: inline;
+  }
 }

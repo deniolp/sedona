@@ -1,5 +1,5 @@
 .offer {
-  font-family: $page-font, "Tahoma", sans-serif;
+  font-family: $page-font;
   text-transform: uppercase;
   text-align: center;
 }
@@ -14,6 +14,14 @@
   color: #000000;
 }
 
+@media (min-width: $tablet-width) {
+  .offer__question {
+    font-size: 30px;
+    padding: 56px 0 0 0;
+    margin: 0 0 31px 0;
+  }
+}
+
 .offer__description {
   width: 270px;
   margin: 0 auto 35px auto;
@@ -24,6 +32,47 @@
   color: #333333;
 }
 
+@media (min-width: $tablet-width) {
+  .offer__description {
+    width: 450px;
+    margin: 0 auto 42px auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer__description {
+    margin: 0 auto 47px auto;
+  }
+}
+
+.offer__br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .offer__br {
+    display: inline;
+  }
+}
+
 .offer__wrapper {
   min-height: 286px;
+}
+
+@media (min-width: $tablet-width) {
+  .offer__wrapper {
+    min-height: 318px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer__wrapper {
+    min-height: 331px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .offer__open-search {
+    width: 458px;
+  }
 }

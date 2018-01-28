@@ -2,7 +2,26 @@
   width: 280px;
   margin: 0 auto;
   padding-bottom: 38px;
-  font-family: $page-font, "Tahoma", sans-serif;
+  font-family: $page-font;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    width: 648px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form {
+    width: 960px;
+    padding-bottom: 65px;
+  }
 }
 
 .feedback-form__item {
@@ -10,8 +29,13 @@
   margin: 0;
   padding: 0;
   border: none;
+}
 
-  &::after:not(.feedback-form__item:last-child) {
+.feedback-form__item--name,
+.feedback-form__item--contacts,
+.feedback-form__item--genfeedback,
+.feedback-form__item--visited-places {
+  &::after {
     position: absolute;
     content: "";
     width: 320px;
@@ -22,20 +46,112 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-form__item--name,
+  .feedback-form__item--contacts,
+  .feedback-form__item--genfeedback,
+  .feedback-form__item--visited-places {
+    &::after {
+      display: none;
+    }
+  }
+}
+
 .feedback-form__item--name {
   padding-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form__item--name {
+    width: 324px;
+    order: 2;
+    margin-bottom: 13px;
+
+    & b {
+      margin-bottom: 58px;
+      padding: 18px 50px 0 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__item--name {
+    width: 480px;
+
+    & b {
+      padding: 18px 165px 0 0;
+    }
+  }
 }
 
 .feedback-form__item--contacts {
   padding-bottom: 17px;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-form__item--contacts {
+    order: 3;
+    width: 100%;
+    padding-bottom: 10px;
+
+    & b {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__item--contacts {
+    & b {
+      margin-bottom: 73px;
+    }
+  }
+}
+
 .feedback-form__item--genfeedback {
   padding-bottom: 3px;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-form__item--genfeedback {
+    width: 324px;
+    order: 1;
+    margin-bottom: 13px;
+
+    & b {
+      margin-bottom: 58px;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__item--genfeedback {
+    width: 480px;
+
+    & b {
+      text-align: center;
+      padding-right: 50px;
+    }
+  }
+}
+
 .feedback-form__item--visited-places {
   margin-bottom: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form__item--visited-places {
+    order: 4;
+    width: 100%;
+    margin-bottom: 1px;
+
+    & b {
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .feedback-form__b {
@@ -51,12 +167,33 @@
   margin-bottom: 22px;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-form__b {
+    font-size: 21px;
+  }
+}
+
 .feedback-form__wrapper {
   padding-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form__wrapper--visited {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__wrapper--visited {
+    width: 960px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .feedback-form__textarea {
@@ -85,6 +222,52 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-form__item--feedback {
+    order: 5;
+    width: 100%;
+    margin-bottom: 6px;
+
+    & b {
+      margin-bottom: 64px;
+    }
+  }
+}
+
 .feedback-form__button {
   padding-top: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form__button {
+    position: relative;
+    order: 6;
+    right: 160px;
+    width: 324px;
+
+    &::after {
+      position: absolute;
+      content: "* — обязательные поля";
+      width: 163px;
+      left: 485px;
+      font-family: $page-font;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: normal;
+      color: #333333;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__button {
+    position: relative;
+    right: 240px;
+    width: 480px;
+
+    &::after {
+      left: 796px;
+    }
+  }
 }

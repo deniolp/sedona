@@ -1,13 +1,36 @@
 .page-footer {
   text-transform: uppercase;
   color: #000000;
-  font-family: $page-font, "Tahoma", sans-serif;
+  font-family: $page-font;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .page-footer__hash-wrapper {
   margin: 0 0 37px 0;
   padding: 35px 0 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__hash-wrapper {
+    margin: 0 0 0 60px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__hash-wrapper {
+    margin: 0 0 0 132px;
+    padding: 0;
+  }
 }
 
 .page-footer__hash {
