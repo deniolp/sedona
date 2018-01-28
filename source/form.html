@@ -53,19 +53,21 @@
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--contacts">
           <b class="feedback-form__b">Контактная информация:</b>
-          <div class="form-contact">
-            <label class="form-contact__label" for="tel">Контактный телефон<sup>*</sup>:</label>
-            <p class="form-contact__input-container">
-              <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
-              <span class="form-contact__logo form-contact__logo--phone"></span>
-            </p>
-          </div>
-          <div class="form-contact">
-            <label class="form-contact__label" for="email">Электронная почта<sup>*</sup>:</label>
-            <p class="form-contact__input-container">
-              <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-              <span class="form-contact__logo form-contact__logo--env"></span>
-            </p>
+          <div class="form-contact__wrapper">
+            <div class="form-contact">
+              <label class="form-contact__label" for="tel"><span class="form-contact__hiding-phone">Контактный </span>телефон<sup>*</sup>:</label>
+              <p class="form-contact__input-container">
+                <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+                <span class="form-contact__logo form-contact__logo--phone"></span>
+              </p>
+            </div>
+            <div class="form-contact">
+              <label class="form-contact__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <p class="form-contact__input-container">
+                <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <span class="form-contact__logo form-contact__logo--env"></span>
+              </p>
+            </div>
           </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--genfeedback">

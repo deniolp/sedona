@@ -19,6 +19,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-chbx--bridge {
+    margin-right: 35px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-chbx--park {
     order: 3;
@@ -33,10 +39,23 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-chbx--bell {
+    margin-right: 35px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-chbx--rocks {
     order: 4;
     padding-left: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-chbx {
+    width: 240px;
+    padding-left: 0;
   }
 }
 

@@ -17,6 +17,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .feedback-form {
+    width: 960px;
+    padding-bottom: 65px;
+  }
+}
+
 .feedback-form__item {
   position: relative;
   margin: 0;
@@ -69,6 +76,16 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .feedback-form__item--name {
+    width: 480px;
+
+    & b {
+      padding: 18px 165px 0 0;
+    }
+  }
+}
+
 .feedback-form__item--contacts {
   padding-bottom: 17px;
 }
@@ -81,6 +98,15 @@
 
     & b {
       margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__item--contacts {
+
+    & b {
+      margin-bottom: 73px;
     }
   }
 }
@@ -98,6 +124,17 @@
     & b {
       margin-bottom: 58px;
       text-align: left;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__item--genfeedback {
+    width: 480px;
+
+    & b {
+      text-align: center;
+      padding-right: 50px;
     }
   }
 }
@@ -151,6 +188,14 @@
   .feedback-form__wrapper--visited {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__wrapper--visited {
+    width: 960px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 
@@ -214,6 +259,18 @@
       font-weight: normal;
       color: #333333;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__button {
+    position: relative;
+    right: 240px;
+    width: 480px;
+
+    &::after {
+      left: 796px;
     }
   }
 }

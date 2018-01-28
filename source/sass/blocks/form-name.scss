@@ -16,6 +16,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-name {
+    width: 480px;
+    padding-left: 80px;
+  }
+}
+
 .form-name__label {
   margin: 0;
   padding: 0;
