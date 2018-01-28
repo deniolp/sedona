@@ -52,6 +52,7 @@
 
 .article__image {
   padding-top: 22px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -70,7 +71,7 @@
 
 .article__outline {
   margin: 0;
-  padding: 11px 0 0 0;
+  padding: 15px 0 0 0;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
@@ -93,6 +94,7 @@
     width: 100%;
     height: 80px;
     margin-top: -80px;
+    padding-top: 15px;
   }
 }
 

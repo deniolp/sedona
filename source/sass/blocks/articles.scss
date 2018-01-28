@@ -1,11 +1,11 @@
-.articles {
+.articles__wrapper {
   display: flex;
   flex-direction: column;
   border-top: 1px solid #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {
-  .articles {
+  .articles__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     width: 648px;
@@ -15,7 +15,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .articles {
+  .articles__wrapper {
     width: 100%;
   }
 }

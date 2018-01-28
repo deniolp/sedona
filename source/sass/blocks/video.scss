@@ -12,6 +12,7 @@
     width: 648px;
     min-height: 784px;
     padding-bottom: 41px;
+    margin: 0 auto;
   }
 }
 
@@ -19,7 +20,7 @@
   .video {
     width: 800px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 85px;
   }
 }
 
@@ -30,6 +31,12 @@
 @media (min-width: $tablet-width) {
   .video__outline {
     height: 244px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__outline {
+    margin-bottom: 3px;
   }
 }
 
@@ -47,7 +54,14 @@
 @media (min-width: $tablet-width) {
   .video__title {
     font-size: 30px;
-    padding-top: 66px;
+    padding-top: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__title {
+    font-size: 30px;
+    padding-top: 71px;
   }
 }
 
