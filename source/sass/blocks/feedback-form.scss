@@ -96,6 +96,26 @@
 
     & b {
       margin-bottom: 25px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 125px;
+        height: 1px;
+        top: 30px;
+        right: 0;
+        background-color: #dbdbdb;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 125px;
+        height: 1px;
+        top: 30px;
+        left: 0;
+        background-color: #dbdbdb;
+      }
     }
   }
 }
@@ -104,6 +124,16 @@
   .feedback-form__item--contacts {
     & b {
       margin-bottom: 73px;
+
+      &::after {
+        width: 280px;
+        top: 29px;
+      }
+
+      &::before {
+        width: 280px;
+        top: 29px;
+      }
     }
   }
 }
@@ -114,6 +144,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback-form__item--genfeedback {
+    position: relative;
     width: 324px;
     order: 1;
     margin-bottom: 13px;
@@ -121,6 +152,16 @@
     & b {
       margin-bottom: 58px;
       text-align: left;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 292px;
+        top: 24px;
+        right: 0;
+        background-color: #dbdbdb;
+      }
     }
   }
 }
@@ -150,7 +191,37 @@
       width: 300px;
       margin: 0 auto;
       margin-bottom: 40px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 125px;
+        height: 1px;
+        top: 42px;
+        right: 0;
+        background-color: #dbdbdb;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 125px;
+        height: 1px;
+        top: 42px;
+        left: 0;
+        background-color: #dbdbdb;
+      }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__item--visited-places b::after {
+    width: 280px;
+  }
+
+  .feedback-form__item--visited-places b::before {
+    width: 280px;
   }
 }
 
@@ -230,7 +301,37 @@
 
     & b {
       margin-bottom: 64px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 125px;
+        height: 1px;
+        top: 31px;
+        right: 0;
+        background-color: #dbdbdb;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 125px;
+        height: 1px;
+        top: 31px;
+        left: 0;
+        background-color: #dbdbdb;
+      }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__item--feedback b::after {
+    width: 280px;
+  }
+
+  .feedback-form__item--feedback b::before {
+    width: 280px;
   }
 }
 
@@ -242,7 +343,7 @@
   .feedback-form__button {
     position: relative;
     order: 6;
-    right: 160px;
+    right: 162px;
     width: 324px;
 
     &::after {

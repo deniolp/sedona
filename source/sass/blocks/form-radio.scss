@@ -45,6 +45,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form-radio__label {
+    padding-left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-radio__label {
+    padding-left: 79px;
+  }
+}
+
 .form-radio__input:checked ~ .form-radio__label::after {
   position: absolute;
   content: "";
