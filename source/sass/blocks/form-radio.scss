@@ -12,10 +12,6 @@
   }
 }
 
-.form-radio__input {
-  display: none;
-}
-
 .form-radio__label {
   position: relative;
   font-size: 18px;
@@ -39,10 +35,13 @@
     background-color: #e5e5e5;
   }
 
-  &:active::before,
-  &:focus::before {
+  &:active::before {
     background-color: #d5d5d5;
   }
+}
+
+.form-radio__input:focus + .form-radio__label::before {
+  background-color: #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {
