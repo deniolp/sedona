@@ -6,6 +6,12 @@
   margin-bottom: 10px;
 }
 
+@media (min-width: $tablet-width) {
+  .form-radio {
+    margin-bottom: 20px;
+  }
+}
+
 .form-radio__input {
   display: none;
 }

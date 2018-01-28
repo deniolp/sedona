@@ -6,6 +6,17 @@
   padding-bottom: 6px;
 }
 
+.banner--form {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner--form {
+    border-bottom: none;
+  }
+}
+
 .banner__image {
   position: relative;
   width: 100%;

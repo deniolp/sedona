@@ -9,6 +9,13 @@
   margin-top: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .form-name {
+    width: 323px;
+    padding-left: 57px;
+  }
+}
+
 .form-name__label {
   margin: 0;
   padding: 0;
@@ -44,5 +51,11 @@
     background-color: $white;
     border: 3px solid #e5e5e5;
     padding-left: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-name__input {
+    min-width: 140px;
   }
 }
