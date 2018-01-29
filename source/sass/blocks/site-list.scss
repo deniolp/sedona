@@ -51,7 +51,7 @@
   .site-list__item:active {
     background-color: #5496bd;
 
-    & a {
+    .site-list__link {
       color: rgba(255, 255, 255, 0.3);
     }
   }
