@@ -12,12 +12,12 @@
   <div class="container">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__list site-list--closed">
-          <li class="site-list__item"><a href="index.html">ГЛАВНАЯ</a></li>
-          <li class="site-list__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
-          <li class="site-list__item"><a>ФОРМА ОТЗЫВА</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Кнопка открытия и закрытия меню в мобильой версии сайта</span></button>
+        <ul class="main-nav__list site-list site-list--closed">
+          <li class="site-list__item"><a class="site-list__link" href="index.html">ГЛАВНАЯ</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="photo.html">ФОТО И ВИДЕО</a></li>
+          <li class="site-list__item site-list__item--active"><a class="site-list__link">ФОРМА ОТЗЫВА</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
         </ul>
       </nav>
       <p class="page-header__paragraph"></p>
@@ -38,32 +38,32 @@
       </section>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="feedback-form__item feedback-form__item--name">
-          <b class="feedback-form__b">Представьтесь:</b>
+          <b class="feedback-form__b feedback-form__b--name">Представьтесь:</b>
           <div class="form-name">
-            <label class="form-name__label" for="name">ИМЯ<sup>*</sup>:</label>
+            <label class="form-name__label" for="name"><span class="visually-hidden">Пожалуйста, введите ваше</span>ИМЯ<sup>*</sup>:</label>
             <input class="form-name__input" type="text" name="name" id="name" placeholder="Петр" required>
           </div>
           <div class="form-name">
-            <label class="form-name__label" for="surname">ФАМИЛИЯ<sup>*</sup>:</label>
+            <label class="form-name__label" for="surname"><span class="visually-hidden">Пожалуйста, введите вашу</span>ФАМИЛИЯ<sup>*</sup>:</label>
             <input class="form-name__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
           </div>
           <div class="form-name">
-            <label class="form-name__label" for="dadsname">ОТЧЕСТВО:</label>
+            <label class="form-name__label" for="dadsname"><span class="visually-hidden">Пожалуйста, введите ваше</span>ОТЧЕСТВО:</label>
             <input class="form-name__input" type="text" name="dadsname" id="dadsname" placeholder="Александрович">
           </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--contacts">
-          <b class="feedback-form__b">Контактная информация:</b>
-          <div class="form-contact__wrapper">
+          <b class="feedback-form__b feedback-form__b--contacts">Контактная информация:</b>
+          <div class="feedback-form__wrapper feedback-form__wrapper--contacts">
             <div class="form-contact">
-              <label class="form-contact__label" for="tel"><span class="form-contact__hiding-phone">Контактный </span>телефон<sup>*</sup>:</label>
+              <label class="form-contact__label" for="tel"><span class="form-contact__hiding-phone"><span class="visually-hidden">Пожалуйста, введите ваш</span>Контактный </span>телефон<sup>*</sup>:</label>
               <p class="form-contact__input-container">
                 <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
                 <span class="form-contact__logo form-contact__logo--phone"></span>
               </p>
             </div>
             <div class="form-contact">
-              <label class="form-contact__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <label class="form-contact__label" for="email"><span class="visually-hidden">Пожалуйста, введите вашу</span>Электронная почта<sup>*</sup>:</label>
               <p class="form-contact__input-container">
                 <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                 <span class="form-contact__logo form-contact__logo--env"></span>
@@ -72,45 +72,45 @@
           </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--genfeedback">
-          <b class="feedback-form__b">Ваше Общее впечатление:</b>
+          <b class="feedback-form__b feedback-form__b--genfeedback">Ваше Общее впечатление:</b>
           <div class="feedback-form__wrapper">
             <p class="form-radio">
-              <input class="form-radio__input" type="radio" id="positive" name="general-feedback" value="positive" checked>
-              <label class="form-radio__label" for="positive">Скорее положительное</label>
+              <input class="form-radio__input visually-hidden" type="radio" id="positive" name="general-feedback" value="positive" checked>
+              <label class="form-radio__label" for="positive"><span class="visually-hidden">Ваше впечатление? Выберите, пожалуйста.</span>Скорее положительное</label>
             </p>
             <p class="form-radio">
-              <input class="form-radio__input" type="radio" id="negative" name="general-feedback" value="negative">
-              <label class="form-radio__label" for="negative">Скорее отрицательное</label>
+              <input class="form-radio__input visually-hidden" type="radio" id="negative" name="general-feedback" value="negative">
+              <label class="form-radio__label" for="negative"><span class="visually-hidden">Ваше впечатление? Выберите, пожалуйста.</span>Скорее отрицательное</label>
             </p>
             <p class="form-radio">
-              <input class="form-radio__input" type="radio" id="soso" name="general-feedback" value="soso">
-              <label class="form-radio__label" for="soso">Затрудняюсь ответить</label>
+              <input class="form-radio__input visually-hidden" type="radio" id="soso" name="general-feedback" value="soso">
+              <label class="form-radio__label" for="soso"><span class="visually-hidden">Ваше впечатление? Выберите, пожалуйста.</span>Затрудняюсь ответить</label>
             </p>
           </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--visited-places">
-          <b class="feedback-form__b">Посещенные Достопримечательности:</b>
+          <b class="feedback-form__b feedback-form__b--visited-places">Посещенные Достопримечательности:</b>
           <div class="feedback-form__wrapper feedback-form__wrapper--visited">
             <p class="form-chbx form-chbx--bridge">
-              <input class="form-chbx__input" type="checkbox" id="bridge" name="bridge" checked>
-              <label class="form-chbx__label" for="bridge">Мост Дьявола</label>
+              <input class="form-chbx__input visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
+              <label class="form-chbx__label" for="bridge"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Мост Дьявола</label>
             </p>
             <p class="form-chbx form-chbx--park">
-              <input class="form-chbx__input" type="checkbox" id="park" name="park" checked>
-              <label class="form-chbx__label" for="park">Слайд-парк</label>
+              <input class="form-chbx__input visually-hidden" type="checkbox" id="park" name="park" checked>
+              <label class="form-chbx__label" for="park"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Слайд-парк</label>
             </p>
             <p class="form-chbx form-chbx--bell">
-              <input class="form-chbx__input" type="checkbox" id="bell" name="bell">
-              <label class="form-chbx__label" for="bell">Гора-Колокол</label>
+              <input class="form-chbx__input visually-hidden" type="checkbox" id="bell" name="bell">
+              <label class="form-chbx__label" for="bell"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Гора-Колокол</label>
             </p>
             <p class="form-chbx form-chbx--rocks">
-              <input class="form-chbx__input" type="checkbox" id="redrocks" name="redrocks" checked>
-              <label class="form-chbx__label" for="redrocks">Красные скалы</label>
+              <input class="form-chbx__input visually-hidden" type="checkbox" id="redrocks" name="redrocks" checked>
+              <label class="form-chbx__label" for="redrocks"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Красные скалы</label>
             </p>
           </div>
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--feedback">
-          <b class="feedback-form__b">Опишите свои эмоции:</b>
+          <b class="feedback-form__b feedback-form__b--feedback">Опишите свои эмоции:</b>
           <textarea class="feedback-form__textarea" name="feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -139,7 +139,7 @@
       </ul>
       <p class="page-footer__copyright copyright">
         <span class="copyright__info">РАЗРАБОТАНО</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Ссылка на интенсив в Академии</span></a>
       </p>
     </footer>
   </div>

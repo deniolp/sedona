@@ -12,12 +12,12 @@
   <div class="container">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__list site-list--closed">
-          <li class="site-list__item"><a href="index.html">ГЛАВНАЯ</a></li>
-          <li class="site-list__item"><a>ФОТО И ВИДЕО</a></li>
-          <li class="site-list__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Кнопка открытия и закрытия меню в мобильой версии сайта</span></button>
+        <ul class="main-nav__list site-list site-list--closed">
+          <li class="site-list__item"><a class="site-list__link" href="index.html">ГЛАВНАЯ</a></li>
+          <li class="site-list__item site-list__item--active"><a class="site-list__link">ФОТО И ВИДЕО</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">ФОРМА ОТЗЫВА</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
         </ul>
       </nav>
       <p class="page-header__paragraph"></p>
@@ -100,13 +100,13 @@
               <div class="video__runner"></div>
             </div>
             <div class="video__replay">
-              <button type="button" name="button-replay" class="video__button video__button--replay"></button>
+              <button type="button" name="button-replay" class="video__button video__button--replay"><span class="visually-hidden">Кнопка для просмотра заново</span></button>
             </div>
             <div class="video__cc">
-              <button type="button" name="button-cc" class="video__button video__button--cc"></button>
+              <button type="button" name="button-cc" class="video__button video__button--cc"><span class="visually-hidden">Кнопка для включения титров</span></button>
             </div>
             <div class="video__fullscreen">
-              <button type="button" name="button-fullscreen" class="video__button video__button--fullscreen"></button>
+              <button type="button" name="button-fullscreen" class="video__button video__button--fullscreen"><span class="visually-hidden">Кнопка для включения и выключения полного экрана</span></button>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
       </ul>
       <p class="page-footer__copyright copyright">
         <span class="copyright__info">РАЗРАБОТАНО</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Ссылка на интенсив в Академии</span></a>
       </p>
     </footer>
   </div>

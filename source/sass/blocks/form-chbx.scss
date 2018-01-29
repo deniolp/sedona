@@ -48,10 +48,6 @@
   }
 }
 
-.form-chbx__input {
-  display: none;
-}
-
 .form-chbx__label {
   position: relative;
   font-size: 18px;
@@ -75,10 +71,13 @@
     background-color: #e5e5e5;
   }
 
-  &:active::before,
-  &:focus::before {
+  &:active::before {
     background-color: #d5d5d5;
   }
+}
+
+.form-chbx__input:focus + .form-chbx__label::before {
+  background-color: #e5e5e5;
 }
 
 .form-chbx__input:checked ~ .form-chbx__label::after {
