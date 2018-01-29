@@ -43,12 +43,17 @@
 }
 
 @media (max-width: 767px) {
-  .site-list__item:focus,
-  .site-list__item:hover {
+  // .site-list__item--active {
+  //   background-color: #e5e5e5;
+  //   border-top: none;
+  // }
+
+  .site-list__item:not(.site-list__item--active):focus,
+  .site-list__item:not(.site-list__item--active):hover {
     background-color: #669ec0;
   }
 
-  .site-list__item:active {
+  .site-list__item:not(.site-list__item--active):active {
     background-color: #5496bd;
 
     .site-list__link {
