@@ -22,6 +22,14 @@
   box-shadow: 0 7px 15px 1px rgba(0, 1, 1, 0.2);
 }
 
+.pop-up__window--success {
+  min-height: 323px;
+}
+
+.pop-up__window--failure {
+  min-height: 280px;
+}
+
 @media (min-width: $tablet-width) {
   .pop-up__window {
     width: 640px;
@@ -29,12 +37,10 @@
   }
 }
 
-.pop-up__window--success {
-  min-height: 323px;
-}
-
-.pop-up__window--failure {
-  min-height: 280px;
+@media (min-width: $desktop-width) {
+  .pop-up__window {
+    min-height: 347px;
+  }
 }
 
 @media (min-width: $tablet-width) {
