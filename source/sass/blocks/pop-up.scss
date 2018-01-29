@@ -8,6 +8,14 @@
   display: none;
 }
 
+.pop-up--show {
+  display: block;
+}
+
+.pop-up--show-fail {
+  display: block;
+}
+
 .pop-up__window {
   position: fixed;
   top: 50%;

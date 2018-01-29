@@ -41,11 +41,11 @@
           <b class="feedback-form__b feedback-form__b--name">Представьтесь:</b>
           <div class="form-name">
             <label class="form-name__label" for="name"><span class="visually-hidden">Пожалуйста, введите ваше</span>ИМЯ<sup>*</sup>:</label>
-            <input class="form-name__input" type="text" name="name" id="name" placeholder="Петр" required>
+            <input class="form-name__input" type="text" name="name" id="name" placeholder="Петр">
           </div>
           <div class="form-name">
             <label class="form-name__label" for="surname"><span class="visually-hidden">Пожалуйста, введите вашу</span>ФАМИЛИЯ<sup>*</sup>:</label>
-            <input class="form-name__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+            <input class="form-name__input" type="text" name="surname" id="surname" placeholder="Иванов">
           </div>
           <div class="form-name">
             <label class="form-name__label" for="dadsname"><span class="visually-hidden">Пожалуйста, введите ваше</span>ОТЧЕСТВО:</label>
@@ -58,14 +58,14 @@
             <div class="form-contact">
               <label class="form-contact__label" for="tel"><span class="form-contact__hiding-phone"><span class="visually-hidden">Пожалуйста, введите ваш</span>Контактный </span>телефон<sup>*</sup>:</label>
               <p class="form-contact__input-container">
-                <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+                <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
                 <span class="form-contact__logo form-contact__logo--phone"></span>
               </p>
             </div>
             <div class="form-contact">
               <label class="form-contact__label" for="email"><span class="visually-hidden">Пожалуйста, введите вашу</span>Электронная почта<sup>*</sup>:</label>
               <p class="form-contact__input-container">
-                <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail">
                 <span class="form-contact__logo form-contact__logo--env"></span>
               </p>
             </div>
@@ -111,7 +111,7 @@
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--feedback">
           <b class="feedback-form__b feedback-form__b--feedback">Опишите свои эмоции:</b>
-          <textarea class="feedback-form__textarea" name="feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="feedback-form__textarea" id="feedback" name="feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
       </form>
@@ -142,7 +142,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Ссылка на интенсив в Академии</span></a>
       </p>
     </footer>
-    <div class="pop-up">
+    <div class="pop-up pop-up--success">
       <section class="pop-up__window pop-up__window--success">
         <h3 class="visually-hidden">Всплывающее окно с сообщением о том, что ваш отзыв принят</h3>
         <b class="pop-up__alert">Ваш отзыв отправлен!</b>
@@ -152,7 +152,7 @@
         </div>
       </section>
     </div>
-    <div class="pop-up">
+    <div class="pop-up pop-up--failure">
       <section class="pop-up__window pop-up__window--failure">
         <h3 class="visually-hidden">Всплывающее окно с сообщением об ошибке во время отправки формы</h3>
         <b class="pop-up__alert pop-up__alert--failure">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
