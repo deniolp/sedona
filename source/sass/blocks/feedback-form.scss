@@ -311,6 +311,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -325,7 +326,7 @@
 @media (min-width: $desktop-width) {
   .feedback-form__wrapper--visited {
     width: 960px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }

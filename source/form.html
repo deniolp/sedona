@@ -12,8 +12,8 @@
   <div class="container">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Кнопка открытия и закрытия меню в мобильой версии сайта</span></button>
-        <ul class="main-nav__list site-list site-list--closed">
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Кнопка открытия и закрытия меню в мобильой версии сайта</span></button>
+        <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">ГЛАВНАЯ</a></li>
           <li class="site-list__item"><a class="site-list__link" href="photo.html">ФОТО И ВИДЕО</a></li>
           <li class="site-list__item site-list__item--active"><a class="site-list__link">ФОРМА ОТЗЫВА</a></li>
@@ -21,7 +21,7 @@
         </ul>
       </nav>
       <p class="page-header__paragraph"></p>
-      <a class="page-header__logo">
+      <a class="page-header__logo page-header__logo--mobile" href="index.html">
         <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
       </a>
     </header>
@@ -29,7 +29,7 @@
       <h1 class="visually-hidden">Страница с отзывом о Седоне</h1>
       <section class="banner banner--form">
         <h2 class="visually-hidden">Вступительный раздел с баннером о форме отзыва</h2>
-        <div class="banner__image">
+        <div class="banner__image banner__image--form">
           <img src="img/text-sedona.svg" alt="Добро пожаловать в Седону!" width="229" height="39">
           <div class="banner__triangle"></div>
         </div>
@@ -41,11 +41,11 @@
           <b class="feedback-form__b feedback-form__b--name">Представьтесь:</b>
           <div class="form-name">
             <label class="form-name__label" for="name"><span class="visually-hidden">Пожалуйста, введите ваше</span>ИМЯ<sup>*</sup>:</label>
-            <input class="form-name__input" type="text" name="name" id="name" placeholder="Петр" required>
+            <input class="form-name__input" type="text" name="name" id="name" placeholder="Петр">
           </div>
           <div class="form-name">
             <label class="form-name__label" for="surname"><span class="visually-hidden">Пожалуйста, введите вашу</span>ФАМИЛИЯ<sup>*</sup>:</label>
-            <input class="form-name__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+            <input class="form-name__input" type="text" name="surname" id="surname" placeholder="Иванов">
           </div>
           <div class="form-name">
             <label class="form-name__label" for="dadsname"><span class="visually-hidden">Пожалуйста, введите ваше</span>ОТЧЕСТВО:</label>
@@ -58,14 +58,14 @@
             <div class="form-contact">
               <label class="form-contact__label" for="tel"><span class="form-contact__hiding-phone"><span class="visually-hidden">Пожалуйста, введите ваш</span>Контактный </span>телефон<sup>*</sup>:</label>
               <p class="form-contact__input-container">
-                <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+                <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
                 <span class="form-contact__logo form-contact__logo--phone"></span>
               </p>
             </div>
             <div class="form-contact">
               <label class="form-contact__label" for="email"><span class="visually-hidden">Пожалуйста, введите вашу</span>Электронная почта<sup>*</sup>:</label>
               <p class="form-contact__input-container">
-                <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail">
                 <span class="form-contact__logo form-contact__logo--env"></span>
               </p>
             </div>
@@ -111,7 +111,7 @@
         </fieldset>
         <fieldset class="feedback-form__item feedback-form__item--feedback">
           <b class="feedback-form__b feedback-form__b--feedback">Опишите свои эмоции:</b>
-          <textarea class="feedback-form__textarea" name="feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="feedback-form__textarea" id="feedback" name="feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
       </form>
@@ -142,8 +142,26 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Ссылка на интенсив в Академии</span></a>
       </p>
     </footer>
+    <div class="pop-up pop-up--success">
+      <section class="pop-up__window pop-up__window--success">
+        <h3 class="visually-hidden">Всплывающее окно с сообщением о том, что ваш отзыв принят</h3>
+        <b class="pop-up__alert">Ваш отзыв отправлен!</b>
+        <p class="pop-up__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="pop-up__button-wrapper">
+          <button class="pop-up__button button" type="button" name="button-popup-close">ЗАКРЫТЬ ОКНО</button>
+        </div>
+      </section>
+    </div>
+    <div class="pop-up pop-up--failure">
+      <section class="pop-up__window pop-up__window--failure">
+        <h3 class="visually-hidden">Всплывающее окно с сообщением об ошибке во время отправки формы</h3>
+        <b class="pop-up__alert pop-up__alert--failure">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+        <p class="pop-up__description pop-up__description--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="pop-up__button pop-up__button--failure button" type="button" name="button-popup-fail">OK</button>
+      </section>
+    </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script-form.js"></script>
 </body>
 
 </html>

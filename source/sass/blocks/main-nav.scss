@@ -41,6 +41,10 @@
   }
 }
 
+.main-nav__toggle--nojs {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;

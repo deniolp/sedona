@@ -24,6 +24,8 @@
   transform: translateX(-50%);
 }
 
-.page-header__logo--mobile {
-  top: 224px;
+@media (max-width: 767px) {
+  .page-header__logo--mobile {
+    top: 224px;
+  }
 }
