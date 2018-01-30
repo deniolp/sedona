@@ -326,7 +326,7 @@
 @media (min-width: $desktop-width) {
   .feedback-form__wrapper--visited {
     width: 960px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
