@@ -1,10 +1,10 @@
 .pop-up {
   position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 20;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
   display: none;
 }
 
@@ -19,7 +19,7 @@
 .pop-up__window {
   position: fixed;
   top: 50%;
-	left: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-family: $page-font;
   text-transform: uppercase;
@@ -61,7 +61,7 @@
 
 .pop-up__alert {
   display: block;
-  margin: 0 0 28px 0;
+  margin: 0 0 28px;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
@@ -69,26 +69,26 @@
 }
 
 .pop-up__alert--failure {
-  margin: 0 0 26px 0;
+  margin: 0 0 26px;
 }
 
 @media (min-width: $tablet-width) {
   .pop-up__alert {
     font-size: 30px;
-    margin: 0 0 32px 0;
+    margin: 0 0 32px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .pop-up__alert--failure {
     width: 220px;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 25px;
     line-height: 40px;
   }
 }
 
 .pop-up__description {
-  margin: 0 auto 33px auto;
+  margin: 0 auto 33px;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
@@ -97,7 +97,7 @@
 }
 
 .pop-up__description--failure {
-  margin: 0 auto 21px auto;
+  margin: 0 auto 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -109,7 +109,7 @@
 @media (min-width: $tablet-width) {
   .pop-up__description--failure {
     width: 290px;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 32px;
   }
 }
 

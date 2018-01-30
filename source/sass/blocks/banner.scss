@@ -47,6 +47,26 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .banner__image--index {
+    min-height: 518px;
+    margin-bottom: 49px;
+  }
+
+  .banner__image--photo,
+  .banner__image--form {
+    min-height: 329px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner__image--photo,
+  .banner__image--form {
+    margin-bottom: 83px;
+  }
+}
+
 .banner__triangle {
   position: absolute;
   left: 0;
@@ -57,6 +77,13 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 105% auto;
+}
+
+@media (min-width: $tablet-width) {
+  .banner__triangle {
+    min-width: 460px;
+    min-height: 350px;
+  }
 }
 
 .banner__welcome {
@@ -81,6 +108,7 @@
 @media (min-width: $tablet-width) {
   .banner__welcome {
     width: 510px;
+    padding: 0 0 44px;
   }
 
   .banner__slogan--small {
@@ -112,6 +140,13 @@
 @media (min-width: $tablet-width) {
   .banner__intro--photo {
     width: 445px;
+    padding-bottom: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner__intro--photo {
+    padding-bottom: 64px;
   }
 }
 
@@ -122,5 +157,12 @@
 @media (min-width: $tablet-width) {
   .banner__intro--form {
     width: 445px;
+    padding-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner__intro--form {
+    padding-bottom: 31px;
   }
 }
