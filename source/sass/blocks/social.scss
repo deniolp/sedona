@@ -23,6 +23,15 @@
   width: 46px;
   height: 48px;
   background-color: $main-blue;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .social__link {
