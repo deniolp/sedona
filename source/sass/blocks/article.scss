@@ -4,6 +4,7 @@
   width: 280px;
   min-height: 415px;
   margin: 0 auto;
+  padding-top: 22px;
 
   &::after {
     position: absolute;
@@ -22,6 +23,7 @@
     width: 324px;
     min-height: 347px;
     margin: 0;
+    padding: 0;
 
     &::after {
       display: none;
@@ -49,9 +51,7 @@
   }
 }
 
-
 .article__image {
-  padding-top: 22px;
   display: block;
 }
 
@@ -59,6 +59,12 @@
   .article__image {
     width: 324px;
     height: 267px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .article__image {
+    width: 400px;
   }
 }
 

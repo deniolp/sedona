@@ -87,9 +87,6 @@
   width: 100%;
   min-height: 201px;
   background-color: #92acbd;
-  background-image: url("../img/video-mobile@1x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -102,7 +99,7 @@
 .video__control {
   width: 280px;
   min-height: 111px;
-  margin: -45px auto 0 auto;
+  margin: -49px auto 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -113,7 +110,7 @@
   .video__control {
     width: 648px;
     min-height: 93px;
-    margin: -93px auto 0 auto;
+    margin: -97px auto 0 auto;
     flex-wrap: nowrap;
     background-color: rgba(0, 0, 0, 0.6);
     align-items: center;
