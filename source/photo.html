@@ -22,7 +22,13 @@
       </nav>
       <p class="page-header__paragraph"></p>
       <a class="page-header__logo page-header__logo--mobile" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)"
+            srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+        </picture>
       </a>
     </header>
     <main class="page-main">
