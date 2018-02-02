@@ -9,11 +9,10 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    min-height: 120px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    min-height: 120px;
+    height: 120px;
   }
 }
 
