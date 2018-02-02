@@ -119,8 +119,15 @@
 
 @media (min-width: $tablet-width) {
   .banner__triangle {
-    min-width: 460px;
-    min-height: 50px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner__triangle {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-size: cover;
+    min-height: 57px;
   }
 }
 
