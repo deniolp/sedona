@@ -115,6 +115,8 @@
 @media (min-width: $tablet-width) {
   .banner__triangle {
     background-image: url("../img/bg-intro-triangle-tablet.svg");
+    min-height: 60px;
+    background-size: 100%;
   }
 }
 
