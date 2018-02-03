@@ -22,7 +22,13 @@
       </nav>
       <p class="page-header__paragraph"></p>
       <a class="page-header__logo page-header__logo--mobile" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)"
+            srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+        </picture>
       </a>
     </header>
     <main class="page-main">
@@ -41,7 +47,11 @@
         <div class="articles__wrapper">
           <article class="article article--first">
             <h3 class="visually-hidden">Первая статья с фото о Седоне</h3>
-            <img class="article__image article__image--first" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img class="article__image article__image--first" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@1x.jpg 1x, img/photo-sunset-mobile@2x.jpg 2x" alt="Фото Неродные просторы">
+            </picture>
             <div class="article__outline">
               <p class="article__author-wrapper">
                 <b class="article__title">НЕРОДНЫЕ ПРОСТОРЫ</b>
@@ -53,7 +63,11 @@
           </article>
           <article class="article">
             <h3 class="visually-hidden">Вторая статья с фото о Седоне</h3>
-            <img class="article__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img class="article__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@1x.jpg 1x, img/photo-cactus-mobile@2x.jpg 2x"  alt="Местная растительность">
+            </picture>
             <div class="article__outline">
               <p class="article__author-wrapper">
                 <b class="article__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</b>
@@ -65,7 +79,11 @@
           </article>
           <article class="article">
             <h3 class="visually-hidden">Третья статья с фото о Седоне</h3>
-            <img class="article__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img class="article__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@1x.jpg 1x, img/photo-roads-mobile@2x.jpg 2x"  alt="Дорога на север">
+            </picture>
             <div class="article__outline">
               <p class="article__author-wrapper">
                 <b class="article__title">ДОРОГА НА СЕВЕР</b>
@@ -77,7 +95,11 @@
           </article>
           <article class="article">
             <h3 class="visually-hidden">Четвертая статья с фото о Седоне</h3>
-            <img class="article__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="article__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x"  alt="Мост дьявола">
+            </picture>
             <div class="article__outline">
               <p class="article__author-wrapper">
                 <b class="article__title">МОСТ ДЬЯВОЛА</b>
@@ -93,7 +115,11 @@
             <b class="video__title">Все еще сомневаетесь?</b>
             <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
-          <div class="video__player"></div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__player" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x"  alt="Картинка под видео">
+          </picture>
           <div class="video__control">
             <div class="video__line">
               <div class="video__hr-line"></div>

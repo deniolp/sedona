@@ -3,14 +3,16 @@
   color: #000000;
   font-family: $page-font;
   text-align: center;
+  padding-top: 1px;
+  height: 244px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    min-height: 120px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 120px;
   }
 }
 

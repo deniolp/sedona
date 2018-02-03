@@ -19,7 +19,7 @@
 
 .banner__image {
   position: relative;
-  width: 100%;
+  width: 320px;
   min-height: 160px;
   margin-bottom: 35px;
   background-color: $main-blue;
@@ -27,6 +27,11 @@
   background-repeat: no-repeat;
   background-position: bottom;
   z-index: 1;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+  }
 
   img {
     display: block;
@@ -39,7 +44,7 @@
 .banner__image--index {
   min-height: 389px;
   margin-bottom: 40px;
-  background-position: center;
+  background-size: cover;
 
   img {
     width: 280px;
@@ -48,6 +53,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .banner__image {
+    width: 100%;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
   .banner__image--index {
     min-height: 518px;
     margin-bottom: 49px;
@@ -55,15 +69,34 @@
 
   .banner__image--photo,
   .banner__image--form {
-    min-height: 329px;
-    margin-bottom: 35px;
+    min-height: 290px;
+    margin-bottom: 74px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .banner__image {
+    width: 100%;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
   .banner__image--photo,
   .banner__image--form {
-    margin-bottom: 83px;
+    min-height: 301px;
+    margin-bottom: 111px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
@@ -81,8 +114,17 @@
 
 @media (min-width: $tablet-width) {
   .banner__triangle {
-    min-width: 460px;
-    min-height: 350px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    min-height: 60px;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner__triangle {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-size: cover;
+    min-height: 57px;
   }
 }
 
