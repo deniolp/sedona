@@ -53,6 +53,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .banner__image--index img {
+    width: 460px;
+    padding-top: 78px;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .banner__image {
     width: 100%;
     background-image: url("../img/bg-back-tablet@1x.jpg");
