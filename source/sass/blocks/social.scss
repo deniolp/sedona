@@ -35,26 +35,28 @@
 }
 
 .social__link {
+  position: relative;
   display: block;
   vertical-align: middle;
   width: 46px;
   height: 48px;
 }
 
-.social__link--tw {
-  background-image: url("../img/icon-twitter.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.social__link-svg {
+  position: absolute;
+  top: 17px;
+  left: 14px;
 }
 
-.social__link--fb {
-  background-image: url("../img/icon-facebook.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.social__link:active .social__link-svg {
+  fill: #88b6d1;
 }
 
-.social__link--yt {
-  background-image: url("../img/icon-youtube.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.social__link-svg--fb {
+  top: 14px;
+  left: 19px;
+}
+
+.social__link-svg--yt {
+  left: 13px;
 }
