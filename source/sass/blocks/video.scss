@@ -264,7 +264,7 @@
 }
 
 .video__button:hover .video__button-svg,
-.video__button:focus .video__button-svg{
+.video__button:focus .video__button-svg {
   fill: #333333;
 
   path {
@@ -272,7 +272,7 @@
   }
 }
 
-.video__button:active .video__button-svg{
+.video__button:active .video__button-svg {
   fill: #c1c1c1;
 
   path {
@@ -287,7 +287,7 @@
 
 .video__button-svg--replay {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -1px;
 }
 
