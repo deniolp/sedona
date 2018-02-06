@@ -126,6 +126,11 @@
 
 .feature-with-photo__img {
   display: block;
+  transform: translateY(-70px);
+
+  &--2 {
+    transform: translateY(-75px);
+  }
 }
 
 .feature-with-photo--first {
