@@ -41,6 +41,19 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .banner__image img {
+    width: 458px;
+    padding-top: 94px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner__image img {
+    padding-top: 101px;
+  }
+}
+
 .banner__image--index {
   min-height: 389px;
   margin-bottom: 40px;
