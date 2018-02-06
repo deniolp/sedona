@@ -67,6 +67,17 @@
   border-radius: 50%;
 }
 
+.form-radio__input:disabled ~ .form-radio__label::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #a4a4a4;
+  top: 4px;
+  left: 19px;
+  border-radius: 50%;
+}
+
 .form-radio__input:checked ~ .form-radio__label:active::after {
   background-color: #a4a4a4;
 }

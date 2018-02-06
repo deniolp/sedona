@@ -63,6 +63,22 @@
   background-image: url("../img/icon-house.svg");
 }
 
+@media (min-width: $tablet-width) {
+  .features__item--house::before {
+    width: 75px;
+    height: 72px;
+    background-size: 75px 72px;
+    top: 44px;
+    left: 89px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item--house::before {
+    left: 161px;
+  }
+}
+
 .features__item--gift {
   margin-top: -15px;
 
@@ -82,6 +98,14 @@
     .features__description {
       width: 170px;
     }
+
+    &::before {
+      width: 64px;
+      height: 75px;
+      background-size: 64px 75px;
+      top: 40px;
+      left: 94px;
+    }
   }
 }
 
@@ -91,6 +115,10 @@
 
     .features__description {
       width: 300px;
+    }
+
+    &::before {
+      left: 167px;
     }
   }
 }
@@ -104,6 +132,22 @@
     width: 38px;
     height: 34px;
     background-image: url("../img/icon-burger.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__item--food::before {
+    width: 77px;
+    height: 68px;
+    background-size: 77px 68px;
+    top: 46px;
+    left: 88px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item--food::before {
+    left: 161px;
   }
 }
 

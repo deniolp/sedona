@@ -183,6 +183,15 @@
   cursor: pointer;
 }
 
+.video__runner:hover,
+.video__runner:focus {
+  background-color: #333333;
+}
+
+.video__runner:active {
+  background-color: #c1c1c1;
+}
+
 @media (min-width: $tablet-width) {
   .video__runner {
     top: 43px;
@@ -232,6 +241,7 @@
 }
 
 .video__button {
+  position: relative;
   border: none;
   background-position: center;
   background-repeat: no-repeat;
@@ -242,24 +252,63 @@
 @media (min-width: $tablet-width) {
   .video__button {
     background-color: transparent;
-    border: 1px solid $white;
+  }
+
+  .video__button-svg {
+    fill: $white;
+
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.video__button:hover .video__button-svg,
+.video__button:focus .video__button-svg {
+  fill: #333333;
+
+  path {
+    fill: #333333;
+  }
+}
+
+.video__button:active .video__button-svg {
+  fill: #c1c1c1;
+
+  path {
+    fill: #c1c1c1;
   }
 }
 
 .video__button--replay {
   width: 16px;
   height: 20px;
-  background-image: url("../img/icon-video-replay.svg");
+}
+
+.video__button-svg--replay {
+  position: absolute;
+  top: 0;
+  left: -1px;
 }
 
 .video__button--cc {
   width: 32px;
   height: 20px;
-  background-image: url("../img/icon-video-subtitles.svg");
+}
+
+.video__button-svg--cc {
+  position: absolute;
+  top: 0;
+  left: -2px;
 }
 
 .video__button--fullscreen {
   width: 20px;
   height: 20px;
-  background-image: url("../img/icon-video-fullscreen.svg");
+}
+
+.video__button-svg--fullscreen {
+  position: absolute;
+  top: 0;
+  left: -2px;
 }
