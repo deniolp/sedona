@@ -183,6 +183,15 @@
   cursor: pointer;
 }
 
+.video__runner:hover,
+.video__runner:focus {
+  background-color: #333333;
+}
+
+.video__runner:active {
+  background-color: #c1c1c1;
+}
+
 @media (min-width: $tablet-width) {
   .video__runner {
     top: 43px;
@@ -251,6 +260,23 @@
     path {
       fill: $white;
     }
+  }
+}
+
+.video__button:hover .video__button-svg,
+.video__button:focus .video__button-svg{
+  fill: #333333;
+
+  path {
+    fill: #333333;
+  }
+}
+
+.video__button:active .video__button-svg{
+  fill: #c1c1c1;
+
+  path {
+    fill: #c1c1c1;
   }
 }
 
