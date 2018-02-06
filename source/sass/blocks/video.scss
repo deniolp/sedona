@@ -232,6 +232,7 @@
 }
 
 .video__button {
+  position: relative;
   border: none;
   background-position: center;
   background-repeat: no-repeat;
@@ -242,24 +243,46 @@
 @media (min-width: $tablet-width) {
   .video__button {
     background-color: transparent;
-    border: 1px solid $white;
+  }
+
+  .video__button-svg {
+    fill: $white;
+
+    path {
+      fill: $white;
+    }
   }
 }
 
 .video__button--replay {
   width: 16px;
   height: 20px;
-  background-image: url("../img/icon-video-replay.svg");
+}
+
+.video__button-svg--replay {
+  position: absolute;
+  top: 0px;
+  left: -1px;
 }
 
 .video__button--cc {
   width: 32px;
   height: 20px;
-  background-image: url("../img/icon-video-subtitles.svg");
+}
+
+.video__button-svg--cc {
+  position: absolute;
+  top: 0;
+  left: -2px;
 }
 
 .video__button--fullscreen {
   width: 20px;
   height: 20px;
-  background-image: url("../img/icon-video-fullscreen.svg");
+}
+
+.video__button-svg--fullscreen {
+  position: absolute;
+  top: 0;
+  left: -2px;
 }
