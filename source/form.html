@@ -32,6 +32,7 @@
   <div class="container">
     <header class="page-header">
       <nav class="main-nav">
+        <!-- Класс main-nav__toggle--nojs для неработающего js, класс main-nav__toggle--closed по умолчанию,- мобильное меню закрыто, для его открытия нужно нажать на кнопку и она его уберет -->
         <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Кнопка открытия и закрытия меню в мобильой версии сайта</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">ГЛАВНАЯ</a></li>
@@ -120,12 +121,12 @@
             <p class="form-chbx form-chbx--bridge">
               <input class="form-chbx__input visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
               <label class="form-chbx__label" for="bridge"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Мост Дьявола</label>
-              <span class="form-chbx__label-tick"></span>
+              <span class="form-chbx__label-tick form-chbx__label-tick--left"></span>
             </p>
             <p class="form-chbx form-chbx--park">
               <input class="form-chbx__input visually-hidden" type="checkbox" id="park" name="park" checked>
               <label class="form-chbx__label" for="park"><span class="visually-hidden">Пожалуйста, отметьте, посетили ли вы это место?</span>Слайд-парк</label>
-              <span class="form-chbx__label-tick"></span>
+              <span class="form-chbx__label-tick form-chbx__label-tick--left"></span>
             </p>
             <p class="form-chbx form-chbx--bell">
               <input class="form-chbx__input visually-hidden" type="checkbox" id="bell" name="bell">

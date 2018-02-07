@@ -104,6 +104,22 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form-chbx__label-tick {
+    left: 60px;
+
+    &--left {
+      left: 125px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-chbx__label-tick {
+    left: 31px;
+  }
+}
+
 .form-chbx__input:checked ~ .form-chbx__label-tick {
   display: inline-block;
 }

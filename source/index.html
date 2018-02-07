@@ -32,6 +32,7 @@
   <div class="container">
     <header class="page-header">
       <nav class="main-nav">
+        <!-- Класс main-nav__toggle--nojs для неработающего js, класс main-nav__toggle--closed по умолчанию,- мобильное меню закрыто, для его открытия нужно нажать на кнопку и она его уберет -->
         <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Кнопка открытия и закрытия меню в мобильой версии сайта</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active"><a class="site-list__link">ГЛАВНАЯ</a></li>
@@ -71,7 +72,17 @@
             <span class="feature-with-photo__number">— №1 —</span>
             <p class="feature-with-photo__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
-          <div class="feature-with-photo__image feature-with-photo__image--1"><span class="visually-hidden">Первая картинка</span></div>
+          <div class="feature-with-photo__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+              <img class="feature-with-photo__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x" alt="Седона - настоящий город, не аттракцион">
+            </picture>
+          </div>
         </div>
         <ul class="features__list">
           <li class="features__item features__item--house">
@@ -93,7 +104,17 @@
             <span class="feature-with-photo__number">— №2 —</span>
             <p class="feature-with-photo__description">Да, по нему можно пройти!<br class="features__br"> Если вы осмелитесь, конечно</p>
           </div>
-          <div class="feature-with-photo__image feature-with-photo__image--2"><span class="visually-hidden">Вторая картинка</span></div>
+          <div class="feature-with-photo__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+              <img class="feature-with-photo__img feature-with-photo__img--2" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x" alt="Знаменитый мост Дьявола в Седоне">
+            </picture>
+          </div>
         </div>
         <ul class="features__list-grey">
           <li class="features__item-grey features__hr">
