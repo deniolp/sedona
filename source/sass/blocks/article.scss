@@ -51,6 +51,17 @@
   }
 }
 
+.article__link {
+  display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .article__link:hover ~ .article__outline,
+  .article__outline:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
 .article__image {
   display: block;
 }
@@ -96,11 +107,12 @@
 
 @media (min-width: $desktop-width) {
   .article__outline {
-    background-color: #f2f2f2;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 80px;
-    margin-top: -80px;
     padding-top: 15px;
+    bottom: 0;
   }
 }
 
