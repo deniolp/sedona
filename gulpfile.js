@@ -16,6 +16,7 @@ var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -82,6 +83,15 @@ gulp.task("html", function() {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("jsmin", function() {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename(function (path) {
+      path.basename +=".min";
+    }))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("serve", function() {
   server.init({
     server: "build/",
@@ -104,6 +114,7 @@ gulp.task("build", function(done) {
     "style",
     "sprite",
     "html",
+    "jsmin",
     done
   );
 });
