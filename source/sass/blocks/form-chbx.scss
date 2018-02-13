@@ -9,28 +9,27 @@
 
 @media (min-width: $tablet-width) {
   .form-chbx {
-    width: 324px;
+    width: 230px;
     margin-bottom: 31px;
+    margin-right: 28px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .form-chbx--bridge {
-    padding-left: 96px;
+@media (min-width: $desktop-width) {
+  .form-chbx {
+    margin-right: 0px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-chbx--park {
     order: 3;
-    padding-left: 96px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-chbx--bell {
     order: 2;
-    padding-left: 31px;
   }
 }
 
@@ -38,7 +37,6 @@
 @media (min-width: $tablet-width) {
   .form-chbx--rocks {
     order: 4;
-    padding-left: 31px;
   }
 }
 
@@ -106,11 +104,7 @@
 
 @media (min-width: $tablet-width) {
   .form-chbx__label-tick {
-    left: 60px;
-
-    &--left {
-      left: 125px;
-    }
+    left: 30px;
   }
 }
 

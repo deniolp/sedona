@@ -320,6 +320,8 @@
   .feedback-form__wrapper--visited {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 95px;
+    justify-content: flex-start;
   }
 }
 
@@ -328,6 +330,7 @@
     width: 960px;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 0;
   }
 }
 
