@@ -339,11 +339,12 @@
   width: 100%;
   background-color: #f2f2f2;
   margin-top: -5px;
+  font-family: $page-font;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
-  padding: 18px;
+  padding: 16px 20px 20px 20px;
   margin-bottom: 45px;
 
   &:hover {
@@ -356,7 +357,7 @@
     outline: none;
     background-color: $white;
     border: 3px solid #e5e5e5;
-    padding: 15px;
+    padding: 13px 17px 17px 17px;
   }
 }
 
@@ -369,7 +370,8 @@
 }
 
 .feedback-form__button {
-  padding-top: 4px;
+  padding-top: 1px;
+  padding-right: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -383,7 +385,8 @@
       position: absolute;
       content: "* — обязательные поля";
       width: 170px;
-      left: 485px;
+      top: 19px;
+      left: 481px;
       font-family: $page-font;
       font-size: 14px;
       line-height: 26px;

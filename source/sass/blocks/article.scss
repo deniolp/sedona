@@ -130,6 +130,7 @@
 .article__title {
   display: block;
   margin: 0;
+  margin-bottom: 2px;
   padding: 0;
   font-weight: bold;
   text-transform: uppercase;
@@ -144,6 +145,7 @@
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+  margin-left: 5px;
 }
 
 @media (min-width: $desktop-width) {
@@ -171,12 +173,12 @@
     background-color: #f2f2f2;
     margin-left: auto;
     padding-right: 30px;
-    padding-top: 13px;
+    padding-top: 15px;
   }
 
   .article__likes-svg {
     top: 13px;
-    left: 1px;
+    left: 4px;
   }
 }
 
