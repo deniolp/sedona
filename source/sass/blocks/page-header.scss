@@ -24,6 +24,18 @@
   transform: translateX(-50%);
 }
 
+.page-header__logo-image {
+  width: 102px;
+  height: 83px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-image {
+    width: 187px;
+    height: 96px;
+  }
+}
+
 @media (max-width: 767px) {
   .page-header__logo--mobile {
     top: 224px;
