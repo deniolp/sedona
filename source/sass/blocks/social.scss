@@ -3,8 +3,7 @@
   margin: 0 auto 37px auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 151px;
+  width: 152px;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,6 +21,7 @@
 .social__item {
   width: 46px;
   height: 48px;
+  margin-right: 6px;
   background-color: $main-blue;
 
   &:hover,
@@ -32,6 +32,10 @@
   &:active {
     background-color: #5496bd;
   }
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__link {
