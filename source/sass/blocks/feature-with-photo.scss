@@ -8,14 +8,13 @@
   background-color: $main-blue;
   color: $white;
   padding-top: 37px;
-  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
   .feature-with-photo {
     display: flex;
     flex-direction: row;
-    height: 256px;
+    min-height: 256px;
     padding-top: 0;
   }
 }
@@ -113,7 +112,7 @@
 
 .feature-with-photo__image {
   width: 100%;
-  min-height: 260px;
+  height: 260px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -121,6 +120,7 @@
 @media (min-width: $tablet-width) {
   .feature-with-photo__image {
     height: 256px;
+    overflow-y: hidden;
   }
 }
 

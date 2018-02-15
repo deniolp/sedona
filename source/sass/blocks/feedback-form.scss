@@ -329,7 +329,6 @@
   .feedback-form__wrapper--visited {
     width: 960px;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-left: 0;
   }
 }
@@ -361,11 +360,15 @@
   }
 }
 
+.feedback-form__item--feedback {
+  margin-bottom: -4px;
+}
+
 @media (min-width: $tablet-width) {
   .feedback-form__item--feedback {
     order: 5;
     width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 2px;
   }
 }
 
