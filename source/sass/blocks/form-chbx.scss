@@ -17,34 +17,34 @@
 
 @media (min-width: $desktop-width) {
   .form-chbx {
+    margin-right: 53px;
+    width: 205px;
+    padding-left: 0;
+  }
+
+  .form-chbx:nth-child(3n) {
+    margin-right: 34px;
+  }
+
+  .form-chbx:nth-child(4n) {
     margin-right: 0;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: 767px) {
   .form-chbx--park {
-    order: 3;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form-chbx--bell {
     order: 2;
   }
 }
 
-
-@media (min-width: $tablet-width) {
-  .form-chbx--rocks {
-    order: 4;
+@media (max-width: 767px) {
+  .form-chbx--bell {
+    order: 3;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form-chbx {
-    width: auto;
-    padding-left: 0;
-  }
+.form-chbx--rocks {
+  order: 4;
 }
 
 .form-chbx__label {
