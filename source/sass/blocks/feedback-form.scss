@@ -360,6 +360,10 @@
   }
 }
 
+.feedback-form__item--feedback {
+  margin-bottom: -4px;
+}
+
 @media (min-width: $tablet-width) {
   .feedback-form__item--feedback {
     order: 5;
