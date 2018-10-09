@@ -6,9 +6,9 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^7.2.6",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.0",
     "del": "^3.0.0",
-    "gulp": "3.9.x",
+    "gulp": "^4.0.0",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
@@ -22,7 +22,7 @@
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.2.0",
     "run-sequence": "^2.2.1",
-    "stylelint": "8.4.x",
+    "stylelint": "^9.6.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -51,6 +51,7 @@
     "node": "8.9"
   },
   "dependencies": {
-    "sshpk": "^1.13.2"
+    "deep-extend": "^0.6.0",
+    "sshpk": "^1.14.2"
   }
 }
