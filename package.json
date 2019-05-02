@@ -6,7 +6,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^7.2.6",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-csso": "^3.0.1",
@@ -53,6 +53,7 @@
   "dependencies": {
     "deep-extend": "^0.6.0",
     "merge": "^1.2.1",
-    "sshpk": "^1.16.1"
+    "sshpk": "^1.16.1",
+    "tar": "^4.4.8"
   }
 }
