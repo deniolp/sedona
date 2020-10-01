@@ -1,4 +1,4 @@
-# Sedona (page about touristic town)
+# Sedona (page about touristic town) It is The Best Page for Tourist.
 ## The project for learning HTML, CSS and Adaptiveness on HTML Academy
 
 ---
