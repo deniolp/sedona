@@ -3,7 +3,7 @@
 
 ---
 
-_Some features that was learned during the working with this project:_
+_Some features that were learned during the working with this project:_
 
 ---
 
