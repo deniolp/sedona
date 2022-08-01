@@ -61,7 +61,7 @@
     "lodash.merge": "^4.6.2",
     "lodash.mergewith": "^4.6.2",
     "lodash.template": "^4.5.0",
-    "merge": "^1.2.1",
+    "merge": "^2.1.1",
     "minimist": "^1.2.5",
     "mixin-deep": "^2.0.1",
     "sshpk": "^1.16.1",
